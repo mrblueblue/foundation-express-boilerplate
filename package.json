@@ -1,0 +1,15 @@
+{
+  "name": "foundation-node",
+  "version": "0.0.1",
+  "description": "express server to serve static foundation files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Huang",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "foundation-sites": "^5.5.2"
+  }
+}
