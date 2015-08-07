@@ -4,14 +4,20 @@
   "description": "express server to serve static foundation files",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && nodemon index.js",
+    "start": "npm install && nodemon --watch public -e html index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Huang",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3",
-    "foundation-sites": "^5.5.2",
-    "nodemon": "^1.4.0"
+    "foundation-sites": "^5.5.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "jade": "^1.11.0",
+    "webpack": "^1.11.0"
   }
 }
