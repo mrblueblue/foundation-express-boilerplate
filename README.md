@@ -1,5 +1,5 @@
-# foundation-express-boilerplate
-express serving static foundation files
+# static-site-starter
+static site development using jade, webpack, gulp, and browser-sync
 
 ```
 npm start
