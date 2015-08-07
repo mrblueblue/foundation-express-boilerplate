@@ -1,7 +1,18 @@
-//- index.jade
 doctype html
-html
+//if IE 9
+  html.lt-ie10(lang='en')  
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Foundation 5
+    link(rel='stylesheet', href='foundation/css/normalize.css')
+    link(rel='stylesheet', href='foundation/css/foundation.css')
+    script(src='foundation/js/vendor/modernizr.js')
   body
-    h1 My Site
-    p Welcome to my super lame site
+    include ./includes/nav.jade
+    script(src='foundation/js/vendor/jquery.js')
+    script(src='foundation/js/foundation.min.js')
+    script.
+      $(document).foundation();
     
