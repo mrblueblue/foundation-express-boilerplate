@@ -9,8 +9,6 @@ gulp.task 'serve', () ->
     open: false
     server: 
       baseDir: 'dist'
-      routes: 
-         '/foundation': __dirname + '/node_modules/foundation-sites/'
 
   gulp.watch 'dist/*', server.reload
 
