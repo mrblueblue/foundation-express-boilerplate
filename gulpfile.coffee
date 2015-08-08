@@ -21,3 +21,8 @@ gulp.task 'webpack:build', () ->
   gulp.src './src/app.js'
     .pipe webpack require './webpack.config.coffee' 
     .pipe gulp.dest './dist/'
+
+gulp.task 'watch', () ->
+  gulp.watch './src/index.jade', ['jade']
+
+gulp.task 'default', ['jade', 'webpack:build', 'serve', 'watch']
